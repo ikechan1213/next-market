@@ -7,7 +7,7 @@ const ReadAllItems = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      const res = await fetch("/api/yen", {
+      const res = await fetch("/api/Q1", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ value: yen }),
