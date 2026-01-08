@@ -1,7 +1,9 @@
 // import { get } from "mongoose"
 
 const getSingleItem = (id) => {
-    const response = fetch("http://localhost:3000/api/item/readsingle/id")
+    const response = fetch(`http://localhost:3000/api/item/readsingle/${id}`)
+    const jsonData = response.json()
+    console.log(jsonData)
 }
 
 const ReadSingleItem = (context) => {
